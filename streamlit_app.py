@@ -29,11 +29,11 @@ if ingredient_list:
     for fruit_chosen in ingredient_list:
         ingredient_string += fruit_chosen + ' '
 
-    st.write(ingredient_string)
+    #st.write(ingredient_string)
 
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order)
                         values ('""" + ingredient_string + """','""" + name_on_order + """')"""
-    st.write(my_insert_stmt)
+    #st.write(my_insert_stmt)
     #st.stop()
     
     time_to_insert = st.button('Submit Order')
